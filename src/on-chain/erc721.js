@@ -43,7 +43,7 @@ export async function getErc721Assets(options) {
             }
         }
     } else {
-        for (let tokenId = (options.startId ?? 1); tokenId <= (options.endId ?? 20000); tokenId++) {
+        for (let tokenId = (options.startId ?? 1); tokenId <= (options.endId ?? 500); tokenId++) {
             try {
                 assets.push(await getErc721Owner(contract, tokenId));
                 

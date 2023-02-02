@@ -38,7 +38,7 @@ export async function getErc1155Assets(options) {
             }
         }
     } else {
-        for (let tokenId = (options.startId ?? 1); tokenId <= (options.endId ?? 20000); tokenId++) {
+        for (let tokenId = (options.startId ?? 1); tokenId <= (options.endId ?? 500); tokenId++) {
             await setTimeoutAsync(300);
             try {
                 const owners = await getErc1155Owners(options.address, tokenId);

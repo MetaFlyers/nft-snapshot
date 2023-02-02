@@ -48,7 +48,7 @@ yargs(hideBin(process.argv))
             alias: 'e',
             desc: 'end tokenId (numeric, inclusive) for the collection',
             type: 'number',
-            default: 20000,
+            default: 500,
         },
     },
     async (args) => {
@@ -89,7 +89,7 @@ yargs(hideBin(process.argv))
             alias: 'e',
             desc: 'end tokenId (numeric, inclusive) for the collection',
             type: 'number',
-            default: 20000,
+            default: 500,
         },
     },
     async (args) => {
